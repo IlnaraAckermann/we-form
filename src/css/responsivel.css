@@ -1,0 +1,32 @@
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 6.4rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        margin: 2rem 0;
+        max-width: 50rem;
+    }
+
+    .logo img {
+        max-width: 400px;
+    }
+
+    button {
+        height: 5.5rem;
+        font-size: 2.4rem;
+    }
+   
+}
+
+@media screen and (min-width: 1000px) {
+    .content{
+        flex-direction: row;
+    }
+    main{
+        max-width: 60rem;
+        padding: 4.4rem 5rem;
+    }
+}
