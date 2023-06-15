@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
-body{
+body {
     font-size: 1.6rem;
 }
 
@@ -20,39 +21,48 @@ h2 {
 }
 
 h1 span,
-h2 span{
+h2 span {
     color: var(--color-destaque);
 }
+
 h1 {
     font-size: 4rem;
     line-height: 7.5rem;
 }
+
 h2 {
     font-size: 2rem;
     line-height: 3rem;
 }
 
-
+main,
 .logo img {
     max-width: 90%;
 }
 
-button {
+.btn {
     border: 0.2rem solid var(--color-borda);
     color: #fff;
-    font-weight: 500;
-    border-radius: 1.2rem;
+    font-weight: 500;    
+    border-radius: var(--border-radius-default);
     width: 100%;
     height: 3rem;
     margin: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button {
-    background-color: var(--color-destaque);
+.btn.cadastrar {
+    font-size: 1.8rem;
 }
 
-button + button {
+.btn {
     background-color: var(--color-destaque-claro);
+}
+
+.btn+.btn {
+    background-color: var(--color-destaque);
 }
 
 p {
@@ -67,7 +77,7 @@ a.registro {
     font-size: 1.4rem;
 }
 
-.content{
+.content {
     height: 100svh;
     width: 100svw;
     display: flex;
@@ -82,9 +92,57 @@ a.registro {
 }
 
 main {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 5.7rem;
+    margin-top: 3rem;
+    border: var(--border-default);
+    border-radius: var(--border-radius-default);
 }
+
+i.fa-angle-left {
+    font-size: 1.8rem;
+    color: var(--color-destaque);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    align-self: flex-start;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+input, select {
+/* width: 49rem; */
+width: clamp(20rem, 50vw, 49rem);
+height: clamp(3rem, 15vh, 5.5rem);
+border: var(--border-default);
+border-radius: var(--border-radius-default);
+padding: 1rem;
+font-size: 1.8rem;
+}
+
+
+.coleta-container {
+    position: relative;
+}
+
+form input + i {
+    position: absolute;
+    right: -3.6rem;
+    top:4.5rem;
+    font-size: 2.4rem;
+    color: var(--color-destaque-claro);
+
+}
+

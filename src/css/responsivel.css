@@ -10,13 +10,17 @@
         max-width: 50rem;
     }
 
-    .logo img {
+    .logo img{
         max-width: 400px;
     }
 
-    button {
+    .btn {
         height: 5.5rem;
         font-size: 2.4rem;
+    }
+
+    .btn.cadastrar{
+        font-size: 3.6rem;
     }
    
 }
@@ -25,8 +29,10 @@
     .content{
         flex-direction: row;
     }
+
     main{
-        max-width: 60rem;
-        padding: 4.4rem 5rem;
+        width: 60rem;
+        padding: 4.4rem 5.7rem;
+        margin-top: 0;
     }
 }

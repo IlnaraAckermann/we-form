@@ -1,5 +1,7 @@
 :root{
     --color-destaque: #FF5678;
     --color-destaque-claro: #35E6E9;
-    --color-borda: #C0EBF4
+    --color-borda: #C0EBF4;
+    --border-default:0.1rem solid rgba(0, 0, 0, 0.15);
+    --border-radius-default:1.2rem;
 }
