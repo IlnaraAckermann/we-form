@@ -133,11 +133,11 @@ font-size: 1.8rem;
 }
 
 
-.coleta-container {
+.coleta-container, .campo-de-atuacao {
     position: relative;
 }
 
-form input + i {
+input + i {
     position: absolute;
     right: -3.6rem;
     top:4.5rem;
@@ -146,3 +146,21 @@ form input + i {
 
 }
 
+
+select{
+    /* color:var(--color-destaque-claro); */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: ;
+    z-index: 1;
+}
+
+select +  i {    
+    position: absolute;
+    top: 4.5rem;
+    left: calc(100% - 3rem);
+    font-size: 2.4rem;
+    color: var(--color-destaque-claro);
+    pointer-events: none;
+}

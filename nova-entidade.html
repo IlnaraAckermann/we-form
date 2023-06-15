@@ -25,37 +25,40 @@
         </header>
 
         <main>
-            <div class="title">                
+            <div class="title">
                 <a href="./index.html" target="_self" rel="noopener noreferrer">
                     <i class="fa-solid fa-angle-left"></i>
                 </a>
                 <h2>
                     Nova <span>entidade</span>
-                </h2>    
+                </h2>
             </div>
 
             <div class="formulario">
                 <form>
                     <label for="input-name">nome</label>
                     <input type="text" id="input-name">
+                    <div class="campo-de-atuacao">
 
-                    <label for="input-campo">campo de atuação</label>
-                    <select name="select">
-                        <option value="" disabled selected>escolha um valor</option>
-                        <option value="valor1">Valor 1</option>
-                        <option value="valor2">Valor 2</option>
-                        <option value="valor3">Valor 3</option>
-                      </select>
-                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                        <label for="input-campo">campo de atuação</label>
+                        <select name="select" id="input-campo">
+                            <option value="" disabled selected>escolha um valor</option>
+                            <option value="valor1">Valor 1</option>
+                            <option value="valor2">Valor 2</option>
+                            <option value="valor3">Valor 3</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+
+
+                    </div>
 
                     <div class="coleta-container">
-                        
+
                         <label for="input-coleta">pontos de coleta</label>
                         <input type="text" id="input-coleta">
-                        
-                            <i class="fa-solid fa-circle-plus"></i>
-                        
-    
+                        <i class="fa-solid fa-circle-plus"></i>
+
+
                     </div>
                 </form>
             </div>
